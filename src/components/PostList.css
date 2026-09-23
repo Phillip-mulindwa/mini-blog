@@ -1,0 +1,22 @@
+/* src/components/PostList.css */
+
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed__row {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+}
+
+.feed__gutter {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  padding-top: 1rem;
+  text-align: right;
+  padding-right: 0.6rem;
+  border-right: 1px solid var(--rule);
+  user-select: none;
+}
