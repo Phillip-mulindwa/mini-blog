@@ -1,0 +1,35 @@
+/* src/index.css — one source of truth for color and type */
+
+:root {
+  --ink: #1b2420;
+  --paper: #ece7d8;
+  --paper-raised: #f5f2e7;
+  --rule: #c9c2ac;
+  --rule-dark: #2c3830;
+  --muted: #6b6455;
+  --muted-on-ink: #a9a495;
+
+  --accent-add: #3f6c51;   /* Tip */
+  --accent-link: #33517d;  /* Insight */
+  --accent-flag: #c0742d;  /* War Story / featured author */
+
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-link);
+  outline-offset: 2px;
+}
