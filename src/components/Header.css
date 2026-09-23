@@ -1,0 +1,57 @@
+/* src/components/Header.css — styling method #1: external CSS */
+
+.editor-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.65rem 1.1rem;
+  background: var(--ink);
+  border-bottom: 1px solid var(--rule-dark);
+}
+
+.editor-titlebar__dots {
+  display: flex;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+
+.editor-titlebar__dots span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--rule-dark);
+}
+
+.editor-titlebar__tabs {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  overflow-x: auto;
+}
+
+.editor-tab {
+  padding: 0.3rem 0.7rem;
+  color: var(--muted-on-ink);
+  white-space: nowrap;
+}
+
+.editor-tab--active {
+  color: var(--paper);
+  background: rgba(245, 242, 231, 0.06);
+  border-top: 2px solid var(--accent-add);
+}
+
+.editor-tab--active em {
+  margin-left: 0.5rem;
+  font-style: normal;
+  color: var(--muted-on-ink);
+  font-weight: 400;
+}
+
+.editor-tab--ghost {
+  border: 1px dashed var(--rule-dark);
+  color: var(--muted-on-ink);
+  cursor: default;
+}
